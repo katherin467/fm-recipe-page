@@ -37,7 +37,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 5% auto;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -47,7 +47,7 @@ body {
 .recipecontent {
     background-color: var(--White);
     border-radius: 20px;
-    padding: 30px;
+    padding: 40px;
 }
 
 .headerimg {
@@ -57,6 +57,10 @@ body {
 
 /* mobile specific */
 @media (max-width: 376px) {
+    body {
+        margin: 0 auto;
+    }
+    .recipecontent { padding: 30px;}
     .headerimg {
         border-radius: 0; 
         width: calc(100% + 60px);
