@@ -1,0 +1,169 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+
+    --Brown800: hsl(14, 45%, 36%);
+
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: 400, 600, 700;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: max(50%, 375px);
+    background-color: var(--Stone100);
+}
+.recipecontent {
+    background-color: var(--White);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.headerimg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* mobile specific */
+@media (max-width: 376px) {
+    .headerimg {
+        border-radius: 0; 
+        width: calc(100% + 60px);
+        margin-left: -30px;
+    }
+    .recipecontent {
+        border-radius: 0; 
+        padding-top: 0;
+    }
+}
+
+h1 {
+    font-family: 'Young Serif';
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: var(--Stone900);
+    line-height: 2rem;
+    padding: 40px 0 20px 0;
+}
+h2 {
+    font-family: 'Young Serif';
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: var(--Brown800);
+    padding: 10px 0 10px 0;
+}
+h3 {
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--Rose800);
+    padding-bottom: 10px;
+}
+p, li, td {
+    font-family: 'Outfit';
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--Stone600);
+    line-height: 1.5rem;
+}
+.step {
+    font-weight: 700;
+}
+
+p {
+    padding-block: .7rem;
+}
+
+li {
+    padding: .2rem;
+    padding-left: 1rem;
+    margin-left: 1.4rem;
+}
+/* vertically centers bullet points for multi-line unordered list items, 
+   provided that they are wrapped in span */
+ul li > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+ol li {
+    padding-top: .5rem;
+}
+
+.preptime {
+    background-color: var(--Rose50);
+    border-radius:10px;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.preptime li::marker {
+    color: var(--Rose800);
+}
+.ingredients li::marker {
+    color: var(--Brown800);
+}
+.steps li::marker {
+    color: var(--Brown800);
+    font-weight: 700;
+}
+
+hr {
+    border-top: 1px solid var(--Stone150);
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+table  {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    vertical-align: middle;
+    border-bottom: 1px solid var(--Stone150);
+    padding-block: .7rem;
+}
+tr:last-child td {
+    border-bottom: 0;
+}
+td:nth-child(1) {
+    padding-inline-start: 2rem;
+}
+td:nth-child(2) {
+    font-weight: 700;
+    color: var(--Brown800);
+    padding-inline-end: 2rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
