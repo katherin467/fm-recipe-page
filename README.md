@@ -37,6 +37,10 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - [Vertically centering bullets](https://idkshite.com/posts/vertical-center-bullet) - This helped me with vertically centering the bullet points in the "Preparation Time" and "Ingredients" sections, which display this behavior when the list item spans multiple lines. 
 - Stack Overflow posts [here](https://stackoverflow.com/questions/2535112/using-css-how-to-change-only-the-2nd-column-of-a-table) and [here](https://stackoverflow.com/questions/1257430/how-can-i-apply-a-border-only-inside-a-table) - These posts helped me with styling particular sections of my table in the "Nutrition" section. 
 
+### Continued development
+
+- [Semantic HTML elements](https://www.w3schools.com/html/html5_semantic_elements.asp) - For next time, I'd like to practice using more of these rather than solely relying on divs. 
+- On a related note, I'd like to define/use more classes on my elements for more specific CSS styling. 
 
 ## Author
 

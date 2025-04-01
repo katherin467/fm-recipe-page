@@ -94,7 +94,7 @@ h2 {
     color: var(--Rose800);
     padding: 0 0 10px 0;
 }
-p, li, td {
+p, li, td, th {
     font-family: 'Outfit';
     font-weight: 400;
     font-size: 1rem;
@@ -152,22 +152,24 @@ table  {
     width: 100%;
     border-collapse: collapse;
 }
-td {
-    vertical-align: middle;
+table tr {
     border-bottom: 1px solid var(--Stone150);
-    padding-block: .7rem;
+    vertical-align: middle;
+}
+table th {
+    text-align: left;
+    padding: .7rem 0 .7rem 2rem;
+}
+table td {
+    font-weight: 700;
+    color: var(--Brown800);
+    padding: .7rem 2rem .7rem 0;
+
 }
 tr:last-child td {
     border-bottom: 0;
 }
-td:nth-child(1) {
-    padding-inline-start: 2rem;
-}
-td:nth-child(2) {
-    font-weight: 700;
-    color: var(--Brown800);
-    padding-inline-end: 2rem;
-}
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
